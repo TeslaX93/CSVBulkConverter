@@ -5,9 +5,9 @@
 
 using namespace std;
 
-int showWhereIs(string co, string gdzie) {
+int showWhereIs(string needle, string haystack) {
     size_t where = 0;
-    where = gdzie.find(co);
+    where = haystack.find(needle);
     if(where!=string::npos) return (int) where;
 
 else return 0;
